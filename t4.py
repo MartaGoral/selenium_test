@@ -47,7 +47,7 @@ class WpPlSearch(unittest.TestCase):
 
     def test_wrong_password(self):
         self.driver.get("http://www.wp.pl")
-        self.driver.find_element_by_link_text('Poczta').click()
+        self.driver.find_element_by_link_text('POCZTA').click()
         login_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.ID, "login")))
         #login_field = self.driver.find_element_by_id("login")
@@ -62,7 +62,7 @@ class WpPlSearch(unittest.TestCase):
 
     def test_wrong_user(self):
         self.driver.get("http://www.wp.pl")
-        self.driver.find_element_by_link_text('Poczta').click()
+        self.driver.find_element_by_link_text('POCZTA').click()
         login_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.ID, "login")))
         #login_field = self.driver.find_element_by_id("login")
@@ -77,7 +77,7 @@ class WpPlSearch(unittest.TestCase):
 
     def test_wrong_user_and_password(self):
         self.driver.get("http://www.wp.pl")
-        self.driver.find_element_by_link_text('Poczta').click()
+        self.driver.find_element_by_link_text('POCZTA').click()
         login_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.ID, "login")))
         #login_field = self.driver.find_element_by_id("login")
